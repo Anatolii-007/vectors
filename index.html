@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Презентація "Вектори"</title>
+  <link rel="stylesheet" href="vectors.css">
+</head>
+<body>
+<a id="top"></a>
+  <main>
+    <section><!--Слайд 1-->
+      <div class="presentation-page">
+        <div class="header">
+            <div class="main-image-container">
+              <h1 class="title_1">Довідковий матеріал</h1>
+              <img src="images/uzhnu.png" alt="">
+            </div>
+            
+            <div class="subtitle-container">
+                <h2 class="subtitle">Вектори</h2>
+                <h3 class="subtitle">Геометрія, 9 клас</h3>
+            </div>
+        </div>
+        <div class="author-section">
+            <div class="author-title">Укладач</div>
+            <div>Студент 3-го курсу</div>
+            <div>Факультету математики та цифрових технологій</div>
+            <div>Вішован Анатолій Іванович</div>
+        </div>
+        <div class="footer">
+            Ужгород 2025р.
+        </div>
+    </div>
+    </section>
+
+    <section><!--Слайд 2-->
+      <div class="presentation-page presentation-page_2">
+        <div class="header">
+              <h1 class="title_2">Зміст</h1>
+        </div>
+        <div class="zmist">
+            <ol>
+              <li><a href="#zmist">Вступ………………………………….   3</a></li>
+              <li><a href="#osnovy">Основні поняття …………...............   4</a></li>
+              <li><a href="#Dii">Дії з векторами………………..........  13</a></li>
+              <li><a href="#skaliar">Скалярний добуток..........................22</a></li>
+              <li><a href="#holosarii">Глосарій ...........................................25</a></li>
+              <li><a href="#history">Історична довідка ............................26</a></li>
+              <li><a href="#spusok">Списки використаних джерел .........27</a></li>
+            </ol>
+        </div>
+        <div class="footer">
+            2
+        </div>
+    </div>
+    </section>
+
+    <section><!--Слайд 3-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 id="zmist" class="title">Вступ</h1>
+        </div>
+        <div class="slide_3-text">
+          Вектори – це один із ключових понять у математиці, що має широке застосування як у геометрії, так і в фізиці, інженерії та інших науках. Вони дозволяють описувати величини, що мають не тільки значення, а й напрям, наприклад, швидкість, силу, переміщення. <br>
+          У цьому навчальному матеріалі ми розглянемо основні властивості векторів, навчимося виконувати дії над ними, знайдемо їх координати та застосуємо ці знання для розв’язання задач. <br>
+          Розуміння векторів допоможе вам краще орієнтуватися в аналітичній геометрії, механіці та навіть комп’ютерній графіці. Цей підручник створений так, щоб зробити вивчення теми доступним і цікавим, з великою кількістю наочних прикладів, завдань для самоперевірки та практичних вправ.
+        </div>
+        <div class="footer">       
+           3
+        </div>
+    </div>
+    </section>
+
+    <section><!--Слайд 4-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 id="osnovy" class="title">РОЗДІЛ 1. ОСНОВНІ ПОНЯТТЯ</h1>
+        </div>
+        <div class="slide_text">
+          <p>Величини, які визначаються не тільки числовим значенням, але й напрямом, називають векторними величинами або  <a href="#holosarii">векторами¹</a>.</p>
+        </div>
+        <div class="slide_4-text">
+          <p class="p_1">Розглянемо відрізок AB. Якщо ми домовимося точку A вважати початком відрізка, а точку B — його кінцем, то такий відрізок буде характеризуватися не тільки довжиною, але й напрямом від точки A до точки B.</p>
+          <p class="p_2">Якщо вказано, яка точка є початком відрізка, а яка точка — його кінцем, то такий відрізок називають напрямленим відрізком або вектором.</p>
+        </div>
+        <img class="v_1" src="images/v_1.png" alt="">
+        <div class="footer">       
+           4
+        </div>
+    </div>
+    </section>
+
+    <section> <!--Слайд 5-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+        </div>
+        <div class="slide_4-text">
+          <p class="p_3">Для позначення векторів також використовують малі букви латинського алфавіту зі стрілкою зверху. На рисунку зображено вектори <span class="arrow">a</span>,  <span class="arrow">b</span> та  <span class="arrow">c</span>.</p>
+          <img src="images/v_2.png" alt="">
+        </div>
+        <p class="p_3 p_4">Якщо початкова та кінцева точки вектора збігаються, виходить нульовий вектор, який позначається як <span class="arrow">0</span>.</p>
+        <div class="slide_4-text">
+          <p class="p_3 p_5">Будь-яку точку на площині можна вважати нульовим вектором. </p>
+          <img src="images/v_3.png" alt="">
+        </div>
+        <div class="footer">       
+           5
+        </div>
+    </div>
+    </section>
+
+
+    <section> <!--Слайд 6-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Модуль вектора</h1>
+        </div>
+        <a href="#holosarii"><img class="img_1" src="images/t_1.png" alt=""></a>
+        <div class="slide_4-text">
+          <img class="img_2" src="images/t_2.png" alt="">
+          <img src="images/v_4.png" alt="">
+        </div>
+        <div class="footer">       
+           6
+        </div>
+    </div>
+    </section>
+
+    <section> <!--Слайд 7-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Вектори бувають:</h1>
+        </div>
+        <img class="null_v" src="images/null_v.png" alt="">
+        <div class="slide_4-text">
+          <img class="img_" src="images/t_4.png" alt="">
+          <img class="v" src="images/v_5.png" alt="">
+          <img src="images/f_1.png" alt="">
+        </div>
+        <div class="slide_4-text">
+          <img class="img_" src="images/t_5.png" alt="">
+          <img  class="v" src="images/v_6.png" alt="">
+          <img src="images/f_2.png" alt="">
+        </div>
+        <div class="slide_4-text s_8">
+          <img class="img_" src="images/t_6.png" alt="">
+          <img class="v" src="images/v_6.png" alt="">
+          <img src="images/f_3.png" alt="">
+        </div>
+        <div class="footer">       
+           7
+        </div>
+    </div>
+    </section>
+
+    <section> <!--Слайд 8-->
+      <div class="presentation-page presentation-page_3">
+        <div class="slide_4-text">
+          <img class="s" src="images/slide8_t1.png" alt="">
+          <img class="s8" src="images/slide8_v1.png" alt="">
+        </div>
+        <div class="slide_4-text">
+          <img class="s" src="images/slide8_t2.png" alt="">
+          <img class="s8" src="images/slide8_v2.png" alt="">
+        </div>
+        <div class="footer">       
+           8
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 9-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Координати вектора</h1>
+        </div>
+          <img class="s s9_1" src="images/slide9_t1.png" alt="">
+          <img class="s s9" src="images/slide9_t2.png" alt="">
+          <img class="s" src="images/slide9_v1.png" alt="">
+        <div class="footer">       
+           9
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 10-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Одиничний вектор</h1>
+        </div>
+          <img class="s s9_1" src="images/slide10_t1.png" alt="">
+          <div class="slide_10-text">
+            <div class="text">
+              <img class="s" src="images/slide10_t2.png" alt="">
+              <img class="s" src="images/slide10_t3.png" alt="">
+            </div>
+          <img class=" s_10" src="images/slide10_v1.png" alt="">
+          </div>
+          
+        <div class="footer">       
+           10
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 11-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Приклади до розділу 1</h1>
+        </div>
+          <div class="slide_10-text">
+            <div class="text">
+              <img class="s" src="images/slide11_t1.png" alt="">
+              <img class="s" src="images/slide11_t2.png" alt="">
+            </div>
+          </div>
+          <div class="slide_10-text">
+            <div class="text">
+              <img class="s" src="images/slide11_t3.png" alt="">
+              <img class="s" src="images/slide11_t4.png" alt="">
+            </div>
+          </div>
+          <div class="slide_10-text">
+            <div class="text">
+              <img class="s" src="images/slide11_t5.png" alt="">
+              <img class="s" src="images/slide11_t6.png" alt="">
+            </div>
+          </div>
+        <div class="footer">       
+           11
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 12-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Перевірка знань до розділу 1</h1>
+        </div>
+          <img class="" src="images/slide12_t1.png" alt="">
+          <img class="t_12" src="images/slide12_t2.png" alt="">
+        <div class="footer">       
+           12
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 13-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 id="Dii" class="title">РОЗДІЛ 2. Дії з векторами</h1>
+        </div>
+        <div class="slide_13-text">
+            <div class="text">
+              <a href="#holosarii"><img class="slide13_t1" src="images/slide13_t1.png" alt=""></a>
+              <img class="slide13_v1" src="images/slide13_v1.png" alt="">
+            </div>
+          </div>
+          <div class="slide_10-text">
+            <div class="text">
+              <a href="#holosarii"><img class="slide13_t1" src="images/slide13_t2.png" alt=""></a>
+              <img class="slide13_v1 slide13_v2" src="images/slide13_v2.png" alt="">
+            </div>
+          </div>
+          <img class="slide13_t3" src="images/slide13_t3.png" alt="">
+        
+        <div class="footer">       
+           13
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 14-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide14_t1" src="images/slide14_t1.png" alt="">
+          <img class="slide14_v1" src="images/slide14_v1.png" alt="">
+        <div class="footer">       
+           14
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 15-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide15_t1.png" alt="">
+          
+        <div class="footer">       
+           15
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 16-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide16_t1.png" alt="">
+          
+        <div class="footer">       
+           16
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 17-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide17_t1.png" alt="">
+          
+        <div class="footer">       
+           17
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 18-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide18_t1.png" alt="">
+          
+        <div class="footer">       
+           18
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 19-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide19_t1.png" alt="">
+        <div class="footer">       
+           19
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 20-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide20_t1.png" alt="">
+        <div class="footer">       
+           20
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 21-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 class="title">Перевірка знань до розділу 2</h1>
+        </div>
+          <img class="slide15_t1" src="images/slide21_t1.png" alt="">
+        <div class="footer">       
+           21
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 22-->
+      <div class="presentation-page presentation-page_3">
+        <a id="skaliar" href="#holosarii"><img class="slide15_t1" src="images/slide22_t1.png" alt=""></a>
+          >
+        <div class="footer">       
+           22
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 23-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide23_t1.png" alt="">
+        <div class="footer">       
+           23
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 24-->
+      <div class="presentation-page presentation-page_3">
+          <img class="slide15_t1" src="images/slide24_t1.png" alt="">
+        <div class="footer">       
+           24
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 25-->
+      <div class="presentation-page presentation-page_3">
+          <img id="holosarii" class="slide15_t1" src="images/slide25_t1.png" alt="">
+        <div class="footer">       
+           25
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 26-->
+      <div class="presentation-page presentation-page_3">
+          <img id="history" class="slide15_t1" src="images/slide26_t1.png" alt="">
+        <div class="footer">       
+           26
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Слайд 27-->
+      <div class="presentation-page presentation-page_3">
+        <div class="header">
+          <h1 id="spusok" class="title">Списки використаних джерел </h1>
+          <ul>
+            <li>Геометрія : підруч. для 9 кл. загальноосвіт. навч. закладів / А. Г. Мерзляк, В. Б. Полонський, М. С. Якір. — Х. : Гімназія, 2017. — 240 с.</li>
+            <li>Геометрія: підруч. для 9 кл. загальноосвіт. навч. закл. / О. С. Істер. Київ: Генеза, 2017. — 240 с.</li>
+            <li><a href="https://www.miyklas.com.ua/p/geometria/9-klas/vektori-na-ploshchini-15442#google_vignette">https://www.miyklas.com.ua/p/geometria/9-klas/vektori-na-ploshchini-15442#google_vignette</a></li>
+            <li><a href="https://mathema.me/worksheets/konspekty-urokiv/9-klas/"> https://mathema.me/worksheets/konspekty-urokiv/9-klas/</a></li>
+          </ul>
+        </div>
+          
+        <div class="footer">       
+           27
+        </div>
+      </div>
+    </section>
+<a href="#top" class="scroll-to-top" title="До початку">↑</a>
+  </main>
+    
+</body>
+</html>
